@@ -18,7 +18,10 @@ header{
 	list-style:none;
 	align-items:center;
 }
+.card li{
+		color:#6A6A6A !important;
 
+}
 .navbar li{
 	position: relative;
 }
