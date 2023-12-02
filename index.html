@@ -27,12 +27,12 @@
 			<div class="container">
 				<div class="row">
 					<h2 data-aos="fade-right" data-aos-duration="1000">About Us</h2>
-					<div class="col-6">
-						<p data-aos="fade-right" data-aos-duration="1000"> about us about us about us about us about us about us about us about us about us about us about us about us about us about us about us about us about us about us about us about us about us about us about us about us about us about us about us about us about us about us </p>
+					<div class="col-md-6">
+						<p data-aos="fade-right" data-aos-duration="1000"> We are members of the MU project, currently working as part of the history group. As a history group, we incorporate the element of history throughout our project. Our main goal of this project is to utilize the historical element by simplifying it or translating the historical information into English, which would make the consent more accessible to the non-Korean speakers. </p>
 					</div>
 
-					<div class="col-6">
-						<img src="../static/image1.jpg" class="img-fluid" data-aos="fade-left" data-aos-duration="1000">
+					<div class="col-md-6">
+						<img src="../static/image1.jpeg" class="img-fluid aboutimg" data-aos="fade-left" data-aos-duration="1000">
 					</div>
 
 
@@ -47,7 +47,7 @@
 				<h2 data-aos ="fade-up"  data-aos-duration="1000">Dashboard - Data Analysis</h2>
 
 				<div class="row mt-5">
-					<div class="col-6 d-flex align-item-center">
+					<div class="col-md-6 d-flex align-item-center">
 						<div class="card card1 mx-auto" data-aos="fade-right" data-aos-duration="1000">
 							<div class="card-body">
 								<h3 class="text-center">About Data</h3>
@@ -58,7 +58,7 @@
 						</div>
 					</div>
 
-					<div class="col-6 d-flex align-item-center">
+					<div class="col-md-6 d-flex align-item-center">
 						<div class="card card1 mx-auto"  data-aos="fade-left" data-aos-duration="1000">
 							<div class="card-body">
 								<h3 class="text-center">Statistics</h3>
@@ -79,36 +79,43 @@
 
 
 				<div class="row mt-5">
-					<div class="col-4" data-aos="fade-right" data-aos-duration="1000">
-						<div class="graph-box mx-auto">
-							<h4>Title</h4>
-							<p>3 sentences</p>
-							<canvas id="piechart1" width="200" height="100"></canvas>
-						</div>
-					</div>
+					<div class="col-md-6 d-flex align-items-center justify-content-center" data-aos="fade-right" data-aos-duration="1000">
+    <div class="graph-box">
+        <div class="d-flex flex-column align-items-center">
+            <canvas id="piechart1" class="mb-4"></canvas>
+                        <h4>Satisfaction on the Exhibition</h4>
+            <p>This pichart illustates the satisfaction score of the visitors for the exibition of the colonial musuem.</p>
+         </div>
 
-					<div class="col-8"  data-aos="fade-left" data-aos-duration="1000">
-						<div class="graph-box mx-auto">
-							<h4>Title</h4>
-							<p>3 sentences</p>
-							<canvas id="barchart1" width="200" height="100"></canvas>
+        
+    </div>
+</div>
+
+					<div class="col-md-6"  data-aos="fade-left" data-aos-duration="1000">
+						<div class="graph-box mx-auto text-center">
+							<canvas id="barchart1" width="200" height="100" class="mb-3"></canvas>
+							<h4>Top 5 Visitor Countries</h4>
+							<p>The graph denotes a presentation or analysis focused on the five nations with the highest number of visitors to the colonial musuem.</p>
 						</div>
 					</div>
 				</div>
 
 			<div class="row mt-5">
-				<div class="col-6" data-aos="fade-right" data-aos-duration="1000">
-					<div class="graph-box mx-auto" >
-						<h4>Number of Visitors by Age</h4>
-						<p>This data shows how many people of each age group visited the museum.</p>
+				<div class="col-md-6" data-aos="fade-right" data-aos-duration="1000">
+					<div class="graph-box mx-auto text-center" >
+
 						<canvas id="linechart1" width="200" height="100"></canvas>
+												<h4>Number of Visitors by Age</h4>
+						<p class="mb-5">This data shows how many people of each age group visited the museum. From this graph, we can see that which age groups are intersted in the colonial period of Korea.</p>
+
 					</div>
 				</div>
-				<div class="col-6" data-aos="fade-left" data-aos-duration="1000">
-					<div class="graph-box mx-auto">
-						<h4>Sentiment Score by Country</h4>
-						<p>This data was obtained by asking a series of questions that determines someone's attitudes or sentiment toward the topic at hand. By using data science, people's responses were converted to a sentiment score. A score close to -1 indicates a negative sentiment, 1 indicates a positive one, and 0 indicates a neutral one.</p>
+				<div class="col-md-6" data-aos="fade-left" data-aos-duration="1000">
+					<div class="graph-box mx-auto text-center">
+
 						<canvas id="linechart2" width="200" height="100"></canvas>
+												<h4>Sentiment Score by Country</h4>
+						<p>This data was obtained by asking a series of questions that determines someone's attitudes or sentiment toward the topic at hand. By using data science, people's responses were converted to a sentiment score. A score close to -1 indicates a negative sentiment, 1 indicates a positive one, and 0 indicates a neutral one.</p>
 					</div>
 				</div>
 			</div>
@@ -134,6 +141,13 @@
             "Dissatisfied": 5,
             "Very Dissatisfied": 3
         };
+        var pieChartOptions = {
+    responsive: true, 
+    maintainAspectRatio: false, 
+        cutout: '30%'
+
+};
+
         var ctx = document.getElementById('piechart1').getContext('2d');
 		var piechart1 = new Chart(ctx, {
 		    type: 'pie',
@@ -142,7 +156,9 @@
 		        datasets: [{
 		            data: Object.values(valueCounts)
 		        }]
-		    }
+		    },
+		        options: pieChartOptions
+
 		});
 
 		var data2={
