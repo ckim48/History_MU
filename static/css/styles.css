@@ -40,7 +40,7 @@ header{
 }
 
 section {
-	margin-top:80px;
+/*	margin-top:80px;*/
 	padding:60px 0;
 	overflow:hidden;
 }
@@ -123,6 +123,15 @@ background-color: gray;
 #piechart1{
 	width:70% !important;
 	height: auto !important;
+}
+.btn-primary{
+background-color: #424A9C !important;
+
+}
+
+.btn-primary:hover{
+background-color: darkblue !important;
+
 }
 .graph-box{
 	background-color: #F9FAFF;
