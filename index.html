@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
 		<title> MU Project - History Team </title>
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 		<!-- <link rel="stylesheet" href="../static/css/styles.css"> -->
@@ -131,40 +134,9 @@
 
 
 				</div>
-				 <div class="row mt-5">
-				 	<h3 class="mb-4">Team members</h3>
-      <!-- First team member -->
-  <div class="col-sm-4 mb-4">
-    <div class="team-member">
-      <div class="member-info" data-aos="fade-up" data-aos-duration="1000">
-        <h5>Sophie Choi</h5>
-        <!-- Add more information as needed -->
-      </div>
-    </div>
-  </div>
 
-  <!-- Second team member -->
-  <div class="col-sm-4 mb-4">
-    <div class="team-member">
-      <div class="member-info" data-aos="fade-up" data-aos-duration="1000">
-        <h5>Myungseok Kim</h5>
-        <!-- Add more information as needed -->
-      </div>
-    </div>
-  </div>
-
-  <!-- Third team member -->
-  <div class="col-sm-4 mb-4">
-    <div class="team-member">
-      <div class="member-info" data-aos="fade-up" data-aos-duration="1000">
-        <h5>Joe Oh</h5>
-        <!-- Add more information as needed -->
-      </div>
-    </div>
-  </div>
-    </div>
 				<div class="row  mt-6">
-					<h2 data-aos="fade-right" data-aos-duration="1000">Client Information</h2>
+					<h2 data-aos="fade-right" data-aos-duration="1000">About Client</h2>
 					<div class="col-md-6">
 						<p data-aos="fade-right" data-aos-duration="1000"> The Museum of Japanese Colonial History in Korea is the first museum to specialize in documenting and exhibiting the history of the anti-Japanese struggle during the Japanese colonial era. It aims to lead in overcoming the present-day Japanese colonial remnants and the divisional system of Korea to promote peace in East Asia and relies on
 the donations and donated data from citizens and overseas Koreans. </p>
@@ -185,7 +157,7 @@ the donations and donated data from citizens and overseas Koreans. </p>
 					<div class="col-md-6">
 						<p data-aos="fade-right" data-aos-duration="1000"> Initially, all museum information, including introductory and exhibition contents, was entirely in Korean, posing difficulty for foreign visitors to grasp the museum's purpose and exhibition content. The History & Data Analytics team translated introductory contents, feedback surveys, and permanent exhibition details. Additionally, the team recorded translated exhibition content for embedding into the museum mobile application as English audio guides. </p>
 
-						<a  href="https://drive.google.com/file/d/1rHHIqDwLAIsmEOC-DKwqmP6ZZE3PN7Ku/view?usp=sharing" data-aos="fade-right" data-aos-duration="1000" class="btn btn-warning">More</a>
+						<a  href="https://drive.google.com/file/d/1rHHIqDwLAIsmEOC-DKwqmP6ZZE3PN7Ku/view?usp=sharing" data-aos="fade-right" data-aos-duration="1000" class="btn btn-warning mb-5">More</a>
 
 					</div>
 
@@ -366,14 +338,15 @@ the donations and donated data from citizens and overseas Koreans. </p>
 		var data2={
 			"Korea": 15,
 			"India": 17,
+			"China":15,
 			"USA": 13,
-			"China": 10
+			"Japan": 5
 		};
 
 		var ctx2 = document.getElementById('barchart1').getContext('2d');
 
 
-		var barColors = ["#79CCE4","#FC8C7A","#A6E479","#F7BF5D"]
+		var barColors = ["#79CCE4","#FC8C7A","#A6E479","#F7BF5D","#D674F7"]
 		var barchart1 = new Chart(ctx2, {
 		    type: 'bar',
 		    data: {
