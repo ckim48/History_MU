@@ -138,6 +138,10 @@ background-color: darkblue !important;
 
 }
 .graph-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: #F9FAFF;
     width: 85%;
     max-width: 100%;
@@ -154,6 +158,8 @@ background-color: darkblue !important;
         height: auto; /* Reset height for smaller screens */
         padding: 20px;
     }
+
+
 }
 
 .graph-box h4{
