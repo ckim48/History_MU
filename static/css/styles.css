@@ -156,8 +156,22 @@ background-color: darkblue !important;
 }
 
 @media (max-width: 800px){
+/*	#piechart1{
+		width:200px !important;
+		height:100px !important;
+	}*/
+	.graph-box{
+		width: 85%;
+		height: 480px;
+	}
+	.logo{
+		margin-top: 7px;
+	}
+	.navbar a{
+		font-size: 12px;
+	}
 	.mt-6{
-		margin-top: 50px !important;
+		margin-top: 75px !important;
 	}
 	.card1{
 		margin-top: 25px;
@@ -165,11 +179,19 @@ background-color: darkblue !important;
 	.graph-box{
 		margin-top: 25px;
 	}
-	#piechart1{
+	#linechart1{
+		width:200 !important;
+		height:350 !important;
+	}
+	#linechart2{
+				width:200 !important;
+		height:350 !important;
+	}
+/*	#piechart1{
 		width:85% !important;
 		height: auto !important;
 		margin: auto !important;
-	}
+	}*/
 
 }
 
