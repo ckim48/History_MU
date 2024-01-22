@@ -156,6 +156,9 @@ background-color: darkblue !important;
 }
 
 @media (max-width: 800px){
+	.mt-6{
+		margin-top: 50px;
+	}
 	.card1{
 		margin-top: 25px;
 	}
