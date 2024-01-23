@@ -10,6 +10,9 @@ header{
 	background: #424A9C;
 	padding: 9px 0;
 }
+.mybr{
+	display: none;
+}
 
 .navbar ul{
 	margin:0;
@@ -180,6 +183,11 @@ background-color: darkblue !important;
 	scale:1.04;
 }
 
+@media (max-width: 1000px){
+.mybr{
+	display: block;
+}
+}
 @media (max-width: 890px){
 /*	#piechart1{
 		width:200px !important;
